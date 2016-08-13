@@ -1,0 +1,53 @@
+{
+  "name": "alexa-starter-kit",
+  "version": "0.0.1",
+  "description": "A bare bones app to fill in with your ingenious skill",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests/*.tests.js",
+    "lint": "eslint ./**/*.js",
+    "postinstall": "npm i alexa-sdk seedrandom --prefix dist",
+    "deploy": "gulp deploy",
+    "debug-mocha": "iron-node node_modules/mocha/bin/_mocha ./tests/*.tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigbilner/alexa-starter-kit.git"
+  },
+  "keywords": [
+    "alexa",
+    "starter",
+    "kit",
+    "amazon",
+    "aws",
+    "gulp",
+    "deploy",
+    "node",
+    "echo",
+    "voice"
+  ],
+  "author": "Craig Bilner",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/craigbilner/alexa-starter-kit/issues"
+  },
+  "homepage": "https://github.com/craigbilner/alexa-starter-kit#readme",
+  "dependencies": {
+    "alexa-sdk": "^1.0.3",
+    "seedrandom": "^2.4.2"
+  },
+  "devDependencies": {
+    "aws-lambda-mock-context": "^3.0.0",
+    "del": "^2.2.1",
+    "eslint": "^3.1.1",
+    "eslint-config-airbnb-base": "^5.0.0",
+    "eslint-plugin-import": "^1.11.1",
+    "gulp": "^3.9.1",
+    "gulp-install": "^0.6.0",
+    "gulp-replace-task": "^0.11.0",
+    "gulp-zip": "^3.2.0",
+    "mocha": "^2.5.3",
+    "node-aws-lambda": "^0.1.8",
+    "run-sequence": "^1.2.2"
+  }
+}
