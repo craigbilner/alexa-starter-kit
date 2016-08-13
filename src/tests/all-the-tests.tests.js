@@ -29,12 +29,6 @@ const runIntent = intent => new Promise(res => {
         endOfSession: obj.response.shouldEndSession,
         outputSpeech: getOutputSpeech(obj),
         gameState: getAttribute(obj, 'STATE'),
-        playerCount: getAttribute(obj, 'playerCount'),
-        players: getAttribute(obj, 'players'),
-        activePlayer: getAttribute(obj, 'activePlayer'),
-        startTime: getAttribute(obj, 'startTime'),
-        currentAnswer: getAttribute(obj, 'currentAnswer'),
-        previousResponse: getAttribute(obj, 'previousResponse'),
       });
     })
     .catch(err => {
