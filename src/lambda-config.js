@@ -2,7 +2,7 @@ module.exports = {
   region: 'us-east-1',
   handler: 'index.handler',
   role: '@@ROLE',
-  functionName: 'Arithlistic',
+  functionName: 'SomeFunctionName',
   timeout: 10,
   memorySize: 128,
   publish: true,
