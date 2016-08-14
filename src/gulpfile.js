@@ -37,7 +37,6 @@ gulp.task('js', function() {
   return gulp.src([
     'index.js',
     'enums.js',
-    'lists.json',
     'responses.js',
     'handlers/**/*',
     'modules/**/*',
